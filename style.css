@@ -33,4 +33,8 @@ nav {
     width: 140px; /* Check this part latter */
 }
 
-nav
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
