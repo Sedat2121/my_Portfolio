@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>My Portfolio Page</title>
+    <script src="https://kit.fontawesome.com/11fec36caf.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,9 +19,9 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Me</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Certificates</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Projects</a></li> <!-- Services -->
+                    <li><a href="#">Certificates</a></li> <!-- Services -->
+                    <li><a href="#">Blog</a></li><!-- Portfolio -->
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
@@ -45,24 +46,27 @@
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills"> <!-- Skills -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <!-- Skills -->
                         <ul>
                             <li><span>UI/UX</span> <br>Desingning Web/App interfaces</li>
                             <li><span>Web Development</span><br>Web App Development</li>
                             <li><span>App Development</span><br>Building IOS Apps</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="experince"> <!-- Experience -->
+                    <div class="tab-contents" id="experience">
+                        <!-- Experience -->
                         <ul>
                             <li><span>2022 - Current</span> <br>TA at Clarusway</li>
                             <li><span>2022 - Current</span><br>Just IT Software Development Bootcamp</li>
                             <li><span>2012 - 2019</span><br>High School Physics Teacher</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="education"> <!-- Education -->
+                    <div class="tab-contents" id="education">
+                        <!-- Education -->
                         <ul>
                             <li><span>2021 - 2022</span><br>Clarusway FullStack Web Development Bootcamp</li>
-                            <li><span>2019 - 2021</span><br>MD at University of South Wales</li>
+                            <li><span>2019 - 2021</span><br>Master's Degree at the University of South Wales</li>
                             <li><span>2006 - 2012</span> <br>Fatih University Physics Bachelor</li>
                         </ul>
                     </div>
@@ -70,7 +74,33 @@
             </div>
         </div>
     </div>
-
+    <!-- Projects -->
+    <div id="projects">
+        <!-- id=services -->
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>HTML - CSS</h2>
+                    <p>Some projects that I uased HTML and CSS only</p>
+                    <a href="#">Projects</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>JavaScript</h2>
+                    <p>Some projects that I uased HTML, CSS and JavaScript </p>
+                    <a href="#">Projects</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>React</h2>
+                    <p>Some projects that I uased HTML, CSS, JavaScript with React</p>
+                    <a href="#">Projects</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="app.js"></script>
