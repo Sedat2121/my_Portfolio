@@ -14,3 +14,7 @@ function opentab(tabname) {
 }
 
 // Projects
+
+
+// Blog
+
