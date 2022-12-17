@@ -11,18 +11,18 @@
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- Header  -->
     <div id="header">
         <div class="container">
             <nav>
                 <a href="#"><img src="/images/BestMentor.png" class="logo" alt="my_logo"></a>
                 <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Projects</a></li> <!-- Services -->
-                    <li><a href="#">Blog</a></li> <!-- Services -->
-                    <li><a href="#">Certificates</a></li><!-- Portfolio -->
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li> 
+                    <li><a href="#blog">Blog</a></li> 
+                    <!-- <li><a href="#">Certificates</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-square-caret-down" onclick="openmenu()"></i>
@@ -74,7 +74,7 @@
         </div>
     </div>
     <!-- Projects -->
-    <div id="projects">          <!-- id=services -->
+    <div id="projects">         
         <div class="container">
             <h1 class="sub-title">My Projects</h1>
             <div class="projects-list">
@@ -134,12 +134,13 @@
                     <a href="Resume/Resume.doc" download class="btn btn2">Download Resume</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
                         <button type="submit" class="btn btn2" >Submit My Message</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
              </div>
         </div>
@@ -147,11 +148,6 @@
             <p>Copyright <i class="fa-solid fa-copyright"></i> Made by Sedat Akdogan 2022</p>
         </div>
     </div>
-
-
-
-
-
 
     <script src="app.js"></script>
 </body>
