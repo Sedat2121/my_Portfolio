@@ -13,8 +13,12 @@ function opentab(tabname) {
     document.getElementById(tabname).classList.add("active-tab");
 }
 
-// Projects
+// Responsiveness
+const sidemenu = document.getElementById("sidemenu");
 
-
-// Blog
-
+function openmenu() {
+    sidemenu.style.right = "0";
+}
+function closemenu() {
+    sidemenu.style.right = "-200px";
+}
