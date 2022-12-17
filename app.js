@@ -13,6 +13,7 @@ function opentab(tabname) {
     document.getElementById(tabname).classList.add("active-tab");
 }
 
+
 // Responsiveness
 const sidemenu = document.getElementById("sidemenu");
 
@@ -23,8 +24,8 @@ function closemenu() {
     sidemenu.style.right = "-200px";
 }
 
-// email submission
 
+// email submission
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwV2oKGQQa7ybs2euYrJeTBwnXHBxhs2LmtttPL8Ob73PGHN7T94TG_gnih-7O8Fs--AA/exec';
 const form = document.forms['submit-to-google-sheet'];
 const msg = document.getElementById("msg");
